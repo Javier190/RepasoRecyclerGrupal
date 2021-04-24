@@ -1,4 +1,8 @@
-{"status":"success","data":[{"nombre":"Alto del carmen","tipolicor":"Pisco","pais origen":"Chile","formato":"750","precio":"8990","imagen":""},
+{"status":"success","data":[
+  {"nombre":"Alto del carmen","tipolicor":"Pisco","pais origen":"Chile","formato":"750","precio":"8990","imagen":""},
+  {"nombre":"Alto del carmen","tipolicor":"Pisco","pais origen":"Chile","formato":"750","precio":"8990","imagen":""},
+  {"nombre":"Alto del carmen","tipolicor":"Pisco","pais origen":"Chile","formato":"750","precio":"8990","imagen":""},
+  {"nombre":"Alto del carmen","tipolicor":"Pisco","pais origen":"Chile","formato":"750","precio":"8990","imagen":""},
   {"nombre":"Alto del carmen","tipolicor":"Pisco","pais origen":"Chile","formato":"750","precio":"8990","imagen":""},
   {"nombre":"Flor de caña","tipolicor":"Ron","pais origen":"Chile","formato":"750","precio":"14990","imagen":""},
   {"nombre":"Smirnoff","tipolicor":"Vodka","pais origen":"Chile","formato":"750","precio":"11990","imagen":""}],"message":"Successfully! All records has been fetched."}

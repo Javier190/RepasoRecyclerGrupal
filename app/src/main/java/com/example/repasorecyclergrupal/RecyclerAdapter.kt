@@ -10,13 +10,12 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerAdapter(lista: List<Producto>) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+class RecyclerAdapter(var lista: List<Producto>, var context: Context) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-    var licores: MutableList<Producto>  = ArrayList()
-    lateinit var context: Context
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = licores.get(position)
+        val item = lista.get(position)
+        System.out.println(item.nombre_licor)
         holder.bind(item, context)
     }
 
@@ -27,7 +26,7 @@ class RecyclerAdapter(lista: List<Producto>) : RecyclerView.Adapter<RecyclerAdap
     }
 
     override fun getItemCount(): Int {
-        return licores.size
+        return lista.size
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -48,8 +47,8 @@ class RecyclerAdapter(lista: List<Producto>) : RecyclerView.Adapter<RecyclerAdap
             tv_precio.text = producto.precio
             image_licor.setImageResource(R.drawable.ron)
 
-            itemView.setOnClickListener(View.OnClickListener { Toast.makeText(context, producto.nombre_licor, Toast.LENGTH_SHORT).show()
-            })
+            View.OnClickListener { Toast.makeText(context, producto.nombre_licor, Toast.LENGTH_SHORT).show()
+            }
         }
 
     }
